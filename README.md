@@ -1,3 +1,5 @@
+<!-- last-verified: 2026-10-23 -->
+
 # ESP32-S3 character-LSTM training
 
 A PyTorch training script for a character-level LSTM intended for ESP32-S3 inference experiments. It combines TinyStories text with generated sensor/status phrases, trains a configurable embedding/LSTM/output-head model, and exports checkpoints, samples, and Rust weight constants.
@@ -14,6 +16,8 @@ source .venv/bin/activate
 python -m pip install numpy torch
 python train_esp32_max_lstm.py --help
 ```
+
+A successful help check prints the usage and available options, then exits before loading the corpus or starting training.
 
 ## Training
 
